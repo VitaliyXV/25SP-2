@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGitFlow", "TestGitFlow\TestGitFlow.csproj", "{43B6ACFF-00EF-434C-BA12-D6D1F47DEA10}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyClass", "MyClass\MyClass.csproj", "{87B2DDB6-49B3-422B-996B-62AB325B492E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{43B6ACFF-00EF-434C-BA12-D6D1F47DEA10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43B6ACFF-00EF-434C-BA12-D6D1F47DEA10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43B6ACFF-00EF-434C-BA12-D6D1F47DEA10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87B2DDB6-49B3-422B-996B-62AB325B492E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87B2DDB6-49B3-422B-996B-62AB325B492E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87B2DDB6-49B3-422B-996B-62AB325B492E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87B2DDB6-49B3-422B-996B-62AB325B492E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

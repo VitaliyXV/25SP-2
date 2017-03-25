@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SergDll
+namespace MyClass
 {
     public class MyClass
     {
         public string Do(string name)
         {
-            return "Hello " + name;
+            return "Hello " + name + "!";
         }
-
     }
 }
