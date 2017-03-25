@@ -48,6 +48,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EvgenLibrary\EvgenLibrary.csproj">
+      <Project>{7a8cbf99-6b9e-46ec-b334-573d0c5ffbba}</Project>
+      <Name>EvgenLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\IvanLib\IvanLib.csproj">
       <Project>{06a0e7b6-bb4c-4c73-9f31-7feb5c2ff2b0}</Project>
       <Name>IvanLib</Name>
