@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGitFlow", "TestGitFlow\TestGitFlow.csproj", "{43B6ACFF-00EF-434C-BA12-D6D1F47DEA10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvgenLibrary", "EvgenLibrary\EvgenLibrary.csproj", "{7A8CBF99-6B9E-46EC-B334-573D0C5FFBBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{43B6ACFF-00EF-434C-BA12-D6D1F47DEA10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43B6ACFF-00EF-434C-BA12-D6D1F47DEA10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43B6ACFF-00EF-434C-BA12-D6D1F47DEA10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A8CBF99-6B9E-46EC-B334-573D0C5FFBBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A8CBF99-6B9E-46EC-B334-573D0C5FFBBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A8CBF99-6B9E-46EC-B334-573D0C5FFBBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A8CBF99-6B9E-46EC-B334-573D0C5FFBBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

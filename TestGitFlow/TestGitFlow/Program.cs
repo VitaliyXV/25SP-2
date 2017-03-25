@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EvgenLibrary;
+using System;
 
 namespace TestGitFlow
 {
@@ -11,6 +8,8 @@ namespace TestGitFlow
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            StringMaker sm = new StringMaker();
+            Console.WriteLine(sm.GetString());
         }
     }
 }
