@@ -5,6 +5,24 @@ namespace CreationalPattern
 {
     public class ConsoleLogger : ILogger
     {
+        private static ConsoleLogger instance;
+        private ConsoleLogger()
+        {
+            
+        }
+
+        public static ConsoleLogger Instanse
+        {
+            get
+            {
+                if (instance != null)
+                {
+                    return instance;
+                }
+                return instance = new ConsoleLogger();
+            }
+        }
+       
         public void Info(string message)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
