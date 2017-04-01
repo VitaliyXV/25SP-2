@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using IvanLib;
+using Library;
 
 namespace TestGitFlow
 {
@@ -11,7 +11,7 @@ namespace TestGitFlow
     {
         static void Main(string[] args)
         {
-            IvanLib.IvanLib ivan = new IvanLib.IvanLib();
+            IvanLib ivan = new IvanLib();
 
             Console.WriteLine("Hello World! " + ivan.GetData());
         }
