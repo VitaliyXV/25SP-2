@@ -14,6 +14,14 @@ namespace TestGitFlow
     {
         static void Main(string[] args)
         {
+            #region SERVICE LOCATOR SINGLETONE
+
+            FileLogger fileLogger = FileLogger.Instanse;
+            SingletonServiceLocator.Instance().Add<FileLogger>(fileLogger);
+            FileLogger returnedFileLog = SingletonServiceLocator.Instance().Get<FileLogger>();
+            SingletonServiceLocator.Instance().Remove<FileLogger>();
+            #endregion
+
             StaticServiceLocator.Registrate<ILogger>(ConsoleLogger.Instanse);
 
             IvanLib ivan = new IvanLib();

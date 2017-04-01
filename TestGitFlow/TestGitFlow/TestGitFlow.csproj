@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CreationalPattern, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CreationalPattern\bin\Debug\CreationalPattern.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,14 +57,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CreationalPattern\CreationalPattern.csproj">
-      <Project>{a195b212-1e63-4b4a-bd49-78f8714d28e6}</Project>
-      <Name>CreationalPattern</Name>
-    </ProjectReference>
     <ProjectReference Include="..\IvanLib\IvanLib.csproj">
       <Project>{06a0e7b6-bb4c-4c73-9f31-7feb5c2ff2b0}</Project>
       <Name>IvanLib</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

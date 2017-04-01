@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGitFlow", "TestGitFlow\TestGitFlow.csproj", "{43B6ACFF-00EF-434C-BA12-D6D1F47DEA10}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyClass", "MyClass\MyClass.csproj", "{87B2DDB6-49B3-422B-996B-62AB325B492E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreationalPattern", "CreationalPattern\CreationalPattern.csproj", "{A195B212-1E63-4B4A-BD49-78F8714D28E6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{87B2DDB6-49B3-422B-996B-62AB325B492E} = {87B2DDB6-49B3-422B-996B-62AB325B492E}
+		{06A0E7B6-BB4C-4C73-9F31-7FEB5C2FF2B0} = {06A0E7B6-BB4C-4C73-9F31-7FEB5C2FF2B0}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
