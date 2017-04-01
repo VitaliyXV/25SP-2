@@ -22,7 +22,8 @@ namespace TestGitFlow
             log.Error("It`s error!");
             log.Info("It`s info!");
 
-
+            StaticServiceLocator.Registrate(typeof(ILogger), new ConsoleLogger());
+            var x = StaticServiceLocator.GetService<ILogger>();
         }
     }
 }
