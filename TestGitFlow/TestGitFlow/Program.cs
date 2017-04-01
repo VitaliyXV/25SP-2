@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Library;
 using CreationalPattern;
+using System.Configuration;
 
 
 namespace TestGitFlow
@@ -22,6 +23,20 @@ namespace TestGitFlow
             log.Error("It`s error!");
             log.Info("It`s info!");
 
+        }
+
+        private string GetLogFile()
+        {
+            try
+            {
+                AppSettingsReader reader = new AppSettingsReader();
+                return reader.GetValue("LogFile", typeof(string)).ToString();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+                return "default.log";
+            }
 
         }
     }
