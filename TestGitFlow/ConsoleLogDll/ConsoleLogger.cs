@@ -2,7 +2,7 @@
 
 namespace ConsoleLogDll
 {
-    public class Logger
+    public class ConsoleLogger
     {
         public void Info(string message)
         {

@@ -15,7 +15,7 @@ namespace TestGitFlow
             IvanLib ivan = new IvanLib();
 
             Console.WriteLine("Hello World! " + ivan.GetData());
-            Logger log = new Logger();
+            ConsoleLogger log = new ConsoleLogger();
 
         }
     }
