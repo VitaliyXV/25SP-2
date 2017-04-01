@@ -14,16 +14,15 @@ namespace TestGitFlow
     {
         static void Main(string[] args)
         {
+            StaticServiceLocator.Registrate<ILogger>(ConsoleLogger.Instanse);
 
             IvanLib ivan = new IvanLib();
 
             Console.WriteLine("Hello World! " + ivan.GetData());
-            ILogger log = ConsoleLogger.Instanse;
+            ILogger log = StaticServiceLocator.GetService<ILogger>();
             log.Debug("It`s debug!");
             log.Error("It`s error!");
             log.Info("It`s info!");
-            StaticServiceLocator.Registrate(typeof(ILogger), ConsoleLogger.Instanse);
-            StaticServiceLocator.GetService<ILogger>().Error("!!!");
         }
 
         private string GetLogFile()
