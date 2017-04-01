@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Library;
+using ConsoleLogDll;
 
 namespace TestGitFlow
 {
@@ -14,6 +15,8 @@ namespace TestGitFlow
             IvanLib ivan = new IvanLib();
 
             Console.WriteLine("Hello World! " + ivan.GetData());
+            Logger log = new Logger();
+
         }
     }
 }
