@@ -32,6 +32,10 @@ namespace TestGitFlow.Model
            Name = name;
         }
 
+        public void SetPrice(float price)
+        {
+            Price = price;
+        }
         public override Item Clone()
         {
             return new Toy(Name, Price, Category, MinAge, Description, ProduceDate, new Manufacturer() { Name = ManufacturerData.Name, LicenseNumber = ManufacturerData.LicenseNumber, Address = ManufacturerData.Address });
