@@ -12,6 +12,15 @@ namespace CreationalPattern
         private static FileLogger instance;
         private StreamWriter fs;
         private string fileName;
+        public static FileLogger Instanse
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new FileLogger();
+                return instance;
+            }
+        }
         public static FileLogger getInstance()
         {
             if (instance == null)
@@ -60,7 +69,7 @@ namespace CreationalPattern
             {
                 if (fileName != "" || fileName != null)
                 {
-                    using (fs = new StreamWriter(fileName))
+                    using (fs = new StreamWriter(fileName, true))
                     {
 
                         fs.WriteLine("{0} {1}: {2} : {3}", DateTime.Now.ToShortDateString(), DateTime.Now.ToShortTimeString(), lvl, msg);
