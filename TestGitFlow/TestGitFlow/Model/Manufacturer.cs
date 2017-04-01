@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace TestGitFlow.Model
 {
-    public enum CategoryType
+    public class Manufacturer
     {
-        NONE,
-        TOYS,
+        public string Name { get; set; }
+        public int LicenseNumber { get; set; }
+        public string Address { get; set; }
     }
-
 }

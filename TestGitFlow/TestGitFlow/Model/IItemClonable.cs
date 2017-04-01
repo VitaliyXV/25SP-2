@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestGitFlow.Model
 {
-    interface IItemClonable
+    public interface IItemClonable
     {
         Item Clone();
     }
