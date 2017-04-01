@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Library;
-using ConsoleLogDll;
+using CreationalPattern;
+
 
 namespace TestGitFlow
 {
@@ -16,7 +17,11 @@ namespace TestGitFlow
             IvanLib ivan = new IvanLib();
 
             Console.WriteLine("Hello World! " + ivan.GetData());
-            ConsoleLogger log = new ConsoleLogger();
+            ILogger log = new ConsoleLogger();
+            log.Debug("It`s debug!");
+            log.Error("It`s error!");
+            log.Info("It`s info!");
+
 
         }
     }
