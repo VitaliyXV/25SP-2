@@ -21,7 +21,7 @@ namespace CreationalPattern
         private FileLogger()
         {
             fileName = "log.log";
-            fs = new StreamWriter(fileName);
+            //fs = new StreamWriter(fileName);
         }
         public void SetFileLogger(string fileName)
         {
@@ -60,11 +60,10 @@ namespace CreationalPattern
             {
                 if (fileName != "" || fileName != null)
                 {
-                    //TODO test fileName exist
                     using (fs = new StreamWriter(fileName))
                     {
 
-                        fs.Write("%s %s : %s : %s \n", DateTime.Now.ToShortDateString(), DateTime.Now.ToShortTimeString(), lvl, msg);
+                        fs.WriteLine("{0} {1}: {2} : {3}", DateTime.Now.ToShortDateString(), DateTime.Now.ToShortTimeString(), lvl, msg);
                     }
                 }
             }
