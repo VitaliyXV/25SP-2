@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Library;
 using CreationalPattern;
+using System.Configuration;
 
 
 namespace TestGitFlow
@@ -17,13 +18,26 @@ namespace TestGitFlow
             IvanLib ivan = new IvanLib();
 
             Console.WriteLine("Hello World! " + ivan.GetData());
-            ILogger log = new ConsoleLogger();
+            ILogger log = ConsoleLogger.Instanse;
             log.Debug("It`s debug!");
             log.Error("It`s error!");
             log.Info("It`s info!");
 
-            StaticServiceLocator.Registrate(typeof(ILogger), new ConsoleLogger());
-            var x = StaticServiceLocator.GetService<ILogger>();
+        }
+
+        private string GetLogFile()
+        {
+            try
+            {
+                AppSettingsReader reader = new AppSettingsReader();
+                return reader.GetValue("LogFile", typeof(string)).ToString();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+                return "default.log";
+            }
+
         }
     }
 }
