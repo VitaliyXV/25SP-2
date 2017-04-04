@@ -56,6 +56,10 @@
       <Project>{06a0e7b6-bb4c-4c73-9f31-7feb5c2ff2b0}</Project>
       <Name>IvanLib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MyClass\MyClass.csproj">
+      <Project>{87b2ddb6-49b3-422b-996b-62ab325b492e}</Project>
+      <Name>MyClass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
