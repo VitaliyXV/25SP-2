@@ -41,6 +41,27 @@ namespace TestGitFlow
 
             log.Info("\n\n\n" + toy1.ToString() + "\n\n\n" + toy2.ToString() + "\n\n\n");
             #endregion
+
+            #region Phone Clone Functionality
+            Phone SamsungS7 = new Phone("S7", 16999, CategoryType.PHONES, PhoneType.SMARTPHONES, "Samsung",
+                                        new DateTime(2016, 2, 21), 5.1f, OSType.ANDROID_6_0, 2, 4, 32, 12, 3000,
+                                        new Communication(BluetoothSpecification.Bluetooth_4_2, true, true, true, true));
+            Console.WriteLine("СамсунгS7 оригинал:\n");
+            Console.WriteLine(SamsungS7);
+
+            Phone ChinaCopySaNsungS7 = (Phone)SamsungS7.Clone();
+            ChinaCopySaNsungS7.Comm.WiFi = false;
+            ChinaCopySaNsungS7.Comm.GPS = false;
+            ChinaCopySaNsungS7.Comm.AGPS = false;
+            ChinaCopySaNsungS7.Comm.OTG = false;
+            ChinaCopySaNsungS7.BrandName = "SaNsung";
+
+            Console.WriteLine("\nСамсунгS7 китайская подделка:\n");
+            Console.WriteLine(ChinaCopySaNsungS7);
+            Console.WriteLine("\nСамсунгS7 оригинал после изменения клона:\n");
+            Console.WriteLine(SamsungS7);
+            #endregion
+
         }
 
         private string GetLogFile()
@@ -55,7 +76,6 @@ namespace TestGitFlow
                 Console.WriteLine(ex.Message.ToString());
                 return "default.log";
             }
-
         }
     }
 }

@@ -45,10 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Communication.cs" />
     <Compile Include="Model\Enumerators.cs" />
     <Compile Include="Model\IItemClonable.cs" />
     <Compile Include="Model\Item.cs" />
     <Compile Include="Model\Manufacturer.cs" />
+    <Compile Include="Model\Phone.cs" />
     <Compile Include="Model\Toy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -10,6 +10,45 @@ namespace TestGitFlow.Model
     {
         NONE,
         TOYS,
+        PHONES
     }
 
+    public enum PhoneType
+    {
+        SMARTPHONES,
+        PUSHBUTTON
+    }
+
+    public enum OSType
+    {
+        ANDROID_7_0,
+        ANDROID_6_0,
+        ANDROID_5_1,
+        ANDROID_5_0,
+        ANDROID_4_4,
+        ANDROID_4_3,
+        ANDROID_4_2,
+        ANDROID_4_1,
+        ANDROID_4_0,
+        ANDROID_2_3,
+        ANDROID_2_1,
+        ANDROID_2_0,
+        iOS_10,
+        iOS_9,
+        iOS_8,
+        iOS_7,
+        iOS_6,
+        Windows_10,
+        Windows_8_1
+    }
+
+    public enum BluetoothSpecification
+    {
+        Bluetooth_5_0,
+        Bluetooth_4_2,
+        Bluetooth_4_1,
+        Bluetooth_4_0,
+        Bluetooth_3_0
+    }
+    
 }
