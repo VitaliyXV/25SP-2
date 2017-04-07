@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Library;
 using CreationalPattern;
 using System.Configuration;
@@ -78,6 +74,46 @@ namespace TestGitFlow
             game2.setPrice(9.99f);
             Console.WriteLine("\nClonned Changed Game Object: ");
             Console.WriteLine(game2);
+            #endregion
+
+
+
+            #region Diary Clone Functionality
+            CategoryType category = CategoryType.FOODS;
+            DateTime dateOfMade = new DateTime(2017, 4, 7);
+            DateTime dateOfTermEnd = new DateTime(2017, 4, 11);
+            Manufacturer manufacturer = new Manufacturer();
+            manufacturer.Name = "Milk King";
+            manufacturer.LicenseNumber = 22222323;
+            manufacturer.Address = "Plane Earth";
+            string name = "Milk";
+            float price = 10.2f;
+
+            Dairy originDairy = new Dairy(name, price, category, dateOfMade, dateOfTermEnd, manufacturer);
+            Dairy cloneDairy = (Dairy)originDairy.Clone();
+
+            Console.WriteLine("===============");
+            Console.WriteLine("\nOringinal dairy ");
+            Console.WriteLine(originDairy);
+
+
+
+           
+           
+           
+            Manufacturer cloneManufacturer = cloneDairy.GetManufacturer();
+            cloneManufacturer.Name = "Milk Dark Lord!!";
+            cloneManufacturer.LicenseNumber = 122345545;
+            price = 12f;
+            dateOfMade = new DateTime(2017, 4, 6);
+            cloneDairy.SetDateOfMade(dateOfMade);
+            cloneDairy.SetPrice(price);
+            cloneDairy.SetManufacturer(cloneManufacturer);
+
+            Console.WriteLine("\nClone dairy ");
+            Console.WriteLine(cloneDairy);
+            log.Warning("Is origin dairy and clone dairy is equel ?? " + object.Equals(cloneDairy, originDairy));
+
             #endregion
         }
 
