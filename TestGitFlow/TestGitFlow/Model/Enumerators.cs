@@ -12,7 +12,8 @@ namespace TestGitFlow.Model
         TOYS,
         PHONES,
         GAMES,
-        FOODS
+        FOODS,
+        DOCUMENT
     }
 
     public enum PhoneType
