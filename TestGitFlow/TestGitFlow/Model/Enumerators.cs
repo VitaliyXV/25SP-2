@@ -10,7 +10,8 @@ namespace TestGitFlow.Model
     {
         NONE,
         TOYS,
-        PHONES
+        PHONES,
+        GAMES
     }
 
     public enum PhoneType
@@ -51,4 +52,40 @@ namespace TestGitFlow.Model
         Bluetooth_3_0
     }
     
+    public enum GamesGenre
+    {
+        Action,
+        Adventure,
+        Casual,
+        Indie,
+        RPG,
+        RTS,
+        MMO,
+        Racing
+    }
+
+    public enum LicenseType
+    {
+        FreeToPlay,
+        EarlyAccess,
+        Demo,
+        Freeware,
+        Shareware        
+    }
+
+    public enum DistributeType
+    {
+        OpticalDrive,
+        Downloadable,
+        Steam
+    }
+
+    public enum SupportedPlatforms
+    {
+        PC,
+        PS,
+        XBOX,
+        Android
+    }
+
 }

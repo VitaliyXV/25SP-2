@@ -34,7 +34,7 @@
   <ItemGroup>
     <Reference Include="CreationalPattern, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\CreationalPattern\bin\Debug\CreationalPattern.dll</HintPath>
+      <HintPath>..\CreationalPattern\obj\Debug\CreationalPattern.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Model\Communication.cs" />
     <Compile Include="Model\Enumerators.cs" />
+    <Compile Include="Model\Game.cs" />
     <Compile Include="Model\IItemClonable.cs" />
     <Compile Include="Model\Item.cs" />
     <Compile Include="Model\Manufacturer.cs" />

@@ -62,6 +62,23 @@ namespace TestGitFlow
             Console.WriteLine(SamsungS7);
             #endregion
 
+            #region Game Clone Functionality
+            Game game1 = new Game("Dark Souls III", 1, "FromSoftware, Inc", new DateTime(2016, 04, 11), GamesGenre.Action, SupportedPlatforms.PC, LicenseType.Shareware, DistributeType.OpticalDrive, 49.99f, 25f);
+            Console.WriteLine("\nGame Clone Functionality");
+            Console.WriteLine("First Game Object: ");
+            Console.WriteLine(game1);
+                        
+            Game game2 = game1.Clone() as Game;
+            Console.WriteLine("\nClonned Game Object: ");
+            Console.WriteLine(game2);
+                        
+            game2.setName("Dark Souls III - The Ringed City");
+            game2.setId(2);
+            game2.setDistribution(DistributeType.Steam);
+            game2.setPrice(9.99f);
+            Console.WriteLine("\nClonned Changed Game Object: ");
+            Console.WriteLine(game2);
+            #endregion
         }
 
         private string GetLogFile()
