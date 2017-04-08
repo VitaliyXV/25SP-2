@@ -13,7 +13,9 @@ namespace TestGitFlow.Model
         public DateTime ProduceDate { get; set; }
         public Manufacturer ManufacturerData { get; set; }
         public Toy()
-        { }
+        {
+            ManufacturerData = new Manufacturer();
+        }
 
         public Toy(string name, float price, CategoryType category, int minAge, string description, DateTime produceDate, Manufacturer manufacturer)
             : base(name, price, category)
