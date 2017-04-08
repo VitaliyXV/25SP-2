@@ -46,17 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builder\IBuilder.cs" />
+    <Compile Include="Builder\ItemBox.cs" />
     <Compile Include="Factory\DairyCreator.cs" />
+    <Compile Include="Factory\DocumentCreator.cs" />
+    <Compile Include="Factory\GameCreator.cs" />
     <Compile Include="Factory\IItemCreator.cs" />
     <Compile Include="Factory\ItemFactory.cs" />
     <Compile Include="Factory\PhoneCreator.cs" />
     <Compile Include="Factory\ToyCreator.cs" />
+    <Compile Include="Model\Cars.cs" />
     <Compile Include="Model\Communication.cs" />
     <Compile Include="Model\Dairy.cs" />
-    <Compile Include="Model\DairySettings.cs" />
     <Compile Include="Model\Document.cs" />
     <Compile Include="Model\Enumerators.cs" />
     <Compile Include="Model\Game.cs" />
+    <Compile Include="Model\GameSettings.cs" />
     <Compile Include="Model\IItemClonable.cs" />
     <Compile Include="Model\IItemSettings.cs" />
     <Compile Include="Model\Item.cs" />
