@@ -3,7 +3,7 @@ using System;
 
 namespace TestGitFlow.Model
 {
-    class Dairy : Item, IItemSettings
+    class Dairy : Item
     {
         #region VARIABLES
         private Manufacturer _manufacturer;
@@ -11,6 +11,17 @@ namespace TestGitFlow.Model
         private DateTime _endOfTerm;
         #endregion
 
+
+         public Dairy(IItemSettings settings)
+        {
+            var dairySettings= settings as DairySettings;
+            Name = dairySettings.Name;
+            Price = dairySettings.Price;
+            Category = dairySettings.Category;
+            _manufacturer = dairySettings.manufacturer;
+            _dateOfMade = dairySettings.dateOfMade;
+            _endOfTerm = dairySettings.endOfTerm;
+        }
 
         public Dairy(string name, float price, CategoryType category, DateTime dateOfMade, DateTime endOfTerm, Manufacturer manufacturer) : base(name, price, category)
         {
