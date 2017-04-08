@@ -15,9 +15,16 @@ namespace TestGitFlow.Factory
         { 
             _baseToy = newToy;
         }
-        public Item CreateItem()
+        public Item CreateItem(IItemSettings settings = null)
         {
-            return _baseToy.Clone();
+            if (settings == null)
+            {
+                return _baseToy.Clone();
+            }
+            else
+            {
+                return new Toy(settings);
+            }
         }
 
         public Type GetItemType()
