@@ -53,6 +53,7 @@
     <Compile Include="Builder\ItemBoxList.cs" />
     <Compile Include="Builder\ItemBoxOneItem.cs" />
     <Compile Include="Builder\PoorChildBoxBuilder.cs" />
+    <Compile Include="Compozit\IItemComponent.cs" />
     <Compile Include="Factory\DairyCreator.cs" />
     <Compile Include="Factory\DocumentCreator.cs" />
     <Compile Include="Factory\GameCreator.cs" />
