@@ -20,10 +20,14 @@ namespace TestGitFlow.Model
         public int BatteryCapacity { get; set; }
         public Communication Comm { get; set; }
 
+        public Phone() : base()
+        {
+        }
+
         public Phone(string name, float price, CategoryType category, PhoneType type,
                      string brandName, DateTime releaseDate, float displaySize, OSType OS, int simCardQuantity,
                      float RAM, float ROM, float camera, int batteryCapacity, Communication comm) :
-                    base(name, price, category)
+            base(name, price, category)
         {
             Type = type;
             BrandName = brandName;
