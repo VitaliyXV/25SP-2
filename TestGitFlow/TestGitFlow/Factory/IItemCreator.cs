@@ -9,7 +9,7 @@ namespace TestGitFlow.Factory
 {
     public interface IItemCreator
     {
-        Item CreateItem();
+        Item CreateItem(IItemSettings settings = null);
         Type GetItemType();
 
     }

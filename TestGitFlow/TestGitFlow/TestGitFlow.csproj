@@ -46,9 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Factory\DairyCreator.cs" />
-    <Compile Include="Factory\DocumentCreator.cs" />
-    <Compile Include="Factory\GameCreator.cs" />
     <Compile Include="Factory\IItemCreator.cs" />
     <Compile Include="Factory\ItemFactory.cs" />
     <Compile Include="Factory\PhoneCreator.cs" />
@@ -63,7 +60,9 @@
     <Compile Include="Model\Item.cs" />
     <Compile Include="Model\Manufacturer.cs" />
     <Compile Include="Model\Phone.cs" />
+    <Compile Include="Model\PhoneSettings.cs" />
     <Compile Include="Model\Toy.cs" />
+    <Compile Include="Model\ToySettings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
