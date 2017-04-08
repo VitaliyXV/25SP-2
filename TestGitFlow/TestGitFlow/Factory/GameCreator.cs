@@ -20,5 +20,11 @@ namespace TestGitFlow.Factory
         {            
             return newgame.Clone();
         }
+
+
+        public Type GetItemType()
+        {
+            return newgame.GetType();
+        }
     }
 }
