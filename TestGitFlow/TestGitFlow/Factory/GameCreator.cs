@@ -7,7 +7,7 @@ using TestGitFlow.Model;
 
 namespace TestGitFlow.Factory
 {
-    class GameCreator:IItemCreator    
+    public class GameCreator:IItemCreator    
     {
         private Game newgame;
 
