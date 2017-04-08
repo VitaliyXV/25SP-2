@@ -11,6 +11,11 @@ namespace TestGitFlow.Factory
     {
         private Dairy _baseDairy;
 
+        public DairyCreator()
+        {
+            _baseDairy = new Dairy();
+        }
+
         public DairyCreator(Dairy newDairy)
         {
             _baseDairy = newDairy;
