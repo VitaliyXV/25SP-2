@@ -10,15 +10,23 @@ namespace TestGitFlow.Factory
     class DairyCreator: IItemCreator
     {
         private Dairy _baseDairy;
+              
 
         public DairyCreator(Dairy newDairy)
         {
             _baseDairy = newDairy;
         }
 
-        public Item CreateItem()
+        public Item CreateItem(IItemSettings settings = null)
         {
-            return _baseDairy.Clone();
+            if (settings == null)
+            {
+                return _baseDairy.Clone();
+            }
+            else
+            {
+                return new Dairy(settings);
+            }
         }
 
         public Type GetItemType()

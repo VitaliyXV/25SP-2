@@ -5,12 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using TestGitFlow.Model;
 
-namespace TestGitFlow.Factory
+namespace TestGitFlow.Builder
 {
-    public interface IItemCreator
+    public interface IItemBox
     {
-        Item CreateItem(IItemSettings settings = null);
-        Type GetItemType();
-
     }
 }

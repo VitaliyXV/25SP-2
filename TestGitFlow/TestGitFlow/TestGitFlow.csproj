@@ -46,20 +46,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builder\BuiderItemList.cs" />
+    <Compile Include="Builder\Director.cs" />
+    <Compile Include="Builder\IBuilder.cs" />
+    <Compile Include="Builder\IItemBox.cs" />
+    <Compile Include="Builder\ItemBoxList.cs" />
+    <Compile Include="Builder\ItemBoxOneItem.cs" />
+    <Compile Include="Builder\PoorChildBoxBuilder.cs" />
+    <Compile Include="Factory\DairyCreator.cs" />
     <Compile Include="Factory\IItemCreator.cs" />
     <Compile Include="Factory\ItemFactory.cs" />
     <Compile Include="Factory\ToyCreator.cs" />
     <Compile Include="Model\Cars.cs" />
     <Compile Include="Model\Communication.cs" />
     <Compile Include="Model\Dairy.cs" />
+    <Compile Include="Model\DairySettings.cs" />
     <Compile Include="Model\Document.cs" />
     <Compile Include="Model\Enumerators.cs" />
     <Compile Include="Model\Game.cs" />
+    <Compile Include="Model\GameSettings.cs" />
     <Compile Include="Model\IItemClonable.cs" />
+    <Compile Include="Model\IItemSettings.cs" />
     <Compile Include="Model\Item.cs" />
     <Compile Include="Model\Manufacturer.cs" />
     <Compile Include="Model\Phone.cs" />
+    <Compile Include="Model\PhoneSettings.cs" />
     <Compile Include="Model\Toy.cs" />
+    <Compile Include="Model\ToySettings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

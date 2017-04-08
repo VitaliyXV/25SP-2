@@ -17,16 +17,16 @@ namespace TestGitFlow.Model
             ManufacturerData = new Manufacturer();
         }
 
-        public Toy(string name, float price, CategoryType category, int minAge, string description, DateTime produceDate, Manufacturer manufacturer)
-            : base(name, price, category)
+        public Toy(IItemSettings settings)
         {
-            Name = name;
-            Price = price;
-            Category = category;
-            MinAge = minAge;
-            Description = description;
-            ProduceDate = produceDate;
-            ManufacturerData = manufacturer;
+            var toySettings = settings as ToySettings;
+            Name = toySettings.Name;
+            Price = toySettings.Price;
+            Category = toySettings.Category;
+            MinAge = toySettings.MinAge;
+            Description = toySettings.Description;
+            ProduceDate = toySettings.ProduceDate;
+            ManufacturerData = toySettings.ManufacturerData;
         }
 
         public void SetName(string name)
@@ -40,7 +40,15 @@ namespace TestGitFlow.Model
         }
         public override Item Clone()
         {
-            return new Toy(Name, Price, Category, MinAge, Description, ProduceDate, new Manufacturer() { Name = ManufacturerData.Name, LicenseNumber = ManufacturerData.LicenseNumber, Address = ManufacturerData.Address });
+            return new Toy(new ToySettings(){
+                Name = this.Name,
+                Price = this.Price,
+                Category = this.Category,
+                MinAge = this.MinAge,
+                Description = this.Description,
+                ProduceDate = this.ProduceDate,
+                ManufacturerData = new Manufacturer() { Name = ManufacturerData.Name, LicenseNumber = ManufacturerData.LicenseNumber, Address = ManufacturerData.Address }
+            });
         }
 
         public override string ToString()

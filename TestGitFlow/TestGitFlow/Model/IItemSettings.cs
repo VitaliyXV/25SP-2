@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestGitFlow.Model
 {
-    interface IItemSettings
+    public interface IItemSettings
     {
 
     }
