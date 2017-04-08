@@ -7,7 +7,7 @@ using TestGitFlow.Model;
 
 namespace TestGitFlow.Factory
 {
-    class PhoneCreator : IItemCreator
+    public class PhoneCreator : IItemCreator
     {
         private Phone phone;
 
@@ -19,10 +19,16 @@ namespace TestGitFlow.Factory
         {
             this.phone = phone;
         }
-
-        public Item CreateItem()
+        public Item CreateItem(IItemSettings settings)
         {
-            return phone.Clone();
+            if (settings == null) return phone.Clone();
+            PhoneSettings set = settings as PhoneSettings;
+            return new Phone(set.Name, set.Price, set.Category, set.Type, set.BrandName, set.ReleaseDate, set.DisplaySize, set.OS, set.SimCardQuantity, set.RAM, set.ROM, set.Camera, set.BatteryCapacity, set.Comm);
+        }
+
+        public Type GetItemType()
+        {
+            return phone.GetType();
         }
     }
 }
