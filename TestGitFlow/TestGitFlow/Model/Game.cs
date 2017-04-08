@@ -40,7 +40,22 @@ namespace TestGitFlow.Model
             Price = price;
             Size = size;
         }
-        
+
+        public Game()
+        {
+            Category = CategoryType.GAMES;
+            Name = "New Game";
+            Id = 0;
+            CompanyName = "Company";
+            ReleaseDate = DateTime.Now;
+            //Genre = ge;
+            //Platform = platform;
+            //License = license;
+            //Distribution = distibution;
+            Price = 0;
+            Size = 0;
+        }
+
 
         public override Item Clone()
         {
