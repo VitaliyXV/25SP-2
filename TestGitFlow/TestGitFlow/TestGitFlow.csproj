@@ -46,8 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Factory\DocumentCreator.cs" />
+=======
+    <Compile Include="Factory\GameCreator.cs" />
+>>>>>>> 2ef5db83fb989f5961de401b74003b70aae76ccf
     <Compile Include="Factory\IItemCreator.cs" />
+<<<<<<< HEAD
+    <Compile Include="Factory\PhoneCreator.cs" />
+=======
+>>>>>>> f33fc573de3047a7a9ee1527135d0667055623a2
     <Compile Include="Factory\ToyCreator.cs" />
     <Compile Include="Model\Communication.cs" />
     <Compile Include="Model\Dairy.cs" />
