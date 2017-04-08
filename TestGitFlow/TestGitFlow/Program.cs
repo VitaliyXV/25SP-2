@@ -29,7 +29,15 @@ namespace TestGitFlow
             log.Info("It`s info!");
 
             #region Toy Clone Functionality
-            Toy toy1 = new Toy("Bear", 2.23f, CategoryType.TOYS, 3, "Very funny toy Very funny toy", DateTime.Now, new Manufacturer() { Name = "Lego" , LicenseNumber = 132451, Address="USA, Washington, JastStreet, 42"});
+            Toy toy1 = new Toy(new ToySettings(){
+                Name = "Bear",
+                 Description = "Very funny toy Very funny toy",
+                  Category = CategoryType.TOYS,
+                   Price =  2.23f,
+                    MinAge = 3,
+                     ProduceDate = DateTime.Now,
+                      ManufacturerData = new Manufacturer() { Name = "Lego" , LicenseNumber = 132451, Address="USA, Washington, JastStreet, 42"}
+            });
             Toy toy2 = toy1.Clone() as Toy;
             toy2.SetName("BadToy");
             toy2.SetPrice(123);
