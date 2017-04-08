@@ -3,7 +3,7 @@ using System;
 
 namespace TestGitFlow.Model
 {
-    class Dairy : Item
+    class Dairy : Item, IItemSettings
     {
         #region VARIABLES
         private Manufacturer _manufacturer;
