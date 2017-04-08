@@ -53,7 +53,7 @@ namespace TestGitFlow.Model
             // return String.Format("Name: {0} Author: {1} Price: {2}$\nPages: {3}p. Create: {4} Summary: {5}", Name, Author, Price, Pages, CreationDate?.ToShortDateString(), Summary);
            
             // c# ver 6 
-            return $"Name: {Name} Author: {Author} Price: {Price}$\nPages: {Pages}p. Create: {CreationDate?.ToShortDateString()} Summary: {Summary}";
+            return "Name: {Name} Author: {Author} Price: {Price}$\nPages: {Pages}p. Create: {CreationDate?.ToShortDateString()} Summary: {Summary}";
         }
     }
 }
