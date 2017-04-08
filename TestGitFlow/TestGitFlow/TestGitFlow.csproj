@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Factory\IItemCreator.cs" />
+    <Compile Include="Factory\ItemFactory.cs" />
     <Compile Include="Factory\ToyCreator.cs" />
     <Compile Include="Model\Communication.cs" />
     <Compile Include="Model\Dairy.cs" />

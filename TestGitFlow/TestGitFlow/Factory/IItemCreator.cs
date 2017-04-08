@@ -10,5 +10,7 @@ namespace TestGitFlow.Factory
     public interface IItemCreator
     {
         Item CreateItem();
+        Type GetItemType();
+
     }
 }
