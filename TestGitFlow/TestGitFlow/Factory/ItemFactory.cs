@@ -25,9 +25,9 @@ namespace TestGitFlow.Factory
                 _factories.Remove(newFactory);
         }
 
-        public Item GetItem<T>()
+        public Item GetItem<T>(IItemSettings settings = null)
         {
-                return _factories.FirstOrDefault(x => x.GetItemType() == typeof(T)).CreateItem();
+            return _factories.FirstOrDefault(x => x.GetItemType() == typeof(T)).CreateItem(settings);
         }
     }
 }
