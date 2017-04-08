@@ -10,6 +10,6 @@ namespace TestGitFlow.Compozit
     {
         void AddChild(IItemComponent itemComponent);
         void RemoveChild(IItemComponent itemComponent);
-        IItemComponent GetChildList();
+        List<IItemComponent> GetChildList();
     }
 }
