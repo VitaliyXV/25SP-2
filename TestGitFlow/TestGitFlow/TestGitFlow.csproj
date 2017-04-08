@@ -62,6 +62,7 @@
     <Compile Include="Model\Phone.cs" />
     <Compile Include="Model\PhoneSettings.cs" />
     <Compile Include="Model\Toy.cs" />
+    <Compile Include="Model\ToySettings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
