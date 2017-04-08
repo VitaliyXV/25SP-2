@@ -7,18 +7,16 @@ using TestGitFlow.Model;
 
 namespace TestGitFlow.Factory
 {
-    public class GameCreator:IItemCreator    
+    public class DocumentCreator :IItemCreator
     {
-        private Game newgame;
-
-        public GameCreator()
+        private Document defaultDoc;
+        public DocumentCreator()
         {
-            newgame = new Game();
+            defaultDoc = new Document();
         }
-
         public Item CreateItem()
-        {            
-            return newgame.Clone();
+        {
+            return defaultDoc.Clone();
         }
     }
 }
