@@ -7,7 +7,7 @@ using TestGitFlow.Model;
 
 namespace TestGitFlow.Factory
 {
-    class ToyCreator: IItemCreator
+    public class ToyCreator: IItemCreator
     {
         private Toy _baseToy;
 
@@ -18,6 +18,11 @@ namespace TestGitFlow.Factory
         public Item CreateItem()
         {
             return _baseToy.Clone();
+        }
+
+        public Type GetItemType()
+        {
+            return _baseToy.GetType();
         }
     }
 }
