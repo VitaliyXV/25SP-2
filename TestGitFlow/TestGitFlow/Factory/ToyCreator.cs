@@ -9,9 +9,15 @@ namespace TestGitFlow.Factory
 {
     class ToyCreator: IItemCreator
     {
+        private Toy _baseToy;
+
+        public ToyCreator(Toy newToy)
+        { 
+            _baseToy = newToy;
+        }
         public Item CreateItem()
         {
-           return new Toy();
+            return _baseToy.Clone();
         }
     }
 }
