@@ -1,4 +1,5 @@
-﻿using TestGitFlow.Model;
+﻿using System;
+using TestGitFlow.Model;
 namespace TestGitFlow.Builder
 {
     public interface IBuilder
@@ -6,5 +7,6 @@ namespace TestGitFlow.Builder
         void AddItem(Item item);
         IItemBox GetItemBox();
 
+        Type GetBoxType();
     }
 }

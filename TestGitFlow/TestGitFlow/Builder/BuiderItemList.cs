@@ -22,5 +22,10 @@ namespace TestGitFlow.Builder
         {
             return itemList;
         }
+
+        public Type GetBoxType()
+        {
+            return itemList.GetType();
+        }
     }
 }
