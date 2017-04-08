@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builder\HappyChildBuilder.cs" />
     <Compile Include="Builder\IBuilder.cs" />
     <Compile Include="Builder\ItemBox.cs" />
     <Compile Include="Factory\DairyCreator.cs" />
