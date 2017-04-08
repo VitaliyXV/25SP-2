@@ -19,8 +19,8 @@ namespace TestGitFlow.Builder
         }
         public void AddItem(Model.Item item)
         {
+            item.AddChild(new Toy());
             _box.Items.Add(item);
-            _box.Items.Last().AddChild(new Toy());
         }
 
         public IItemBox GetItemBox()
