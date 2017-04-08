@@ -46,10 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builder\BuiderItemList.cs" />
     <Compile Include="Builder\IBuilder.cs" />
     <Compile Include="Builder\IItemBox.cs" />
     <Compile Include="Builder\ItemBoxList.cs" />
     <Compile Include="Builder\ItemBoxOneItem.cs" />
+    <Compile Include="Builder\PoorChildBoxBuilder.cs" />
     <Compile Include="Factory\DairyCreator.cs" />
     <Compile Include="Factory\IItemCreator.cs" />
     <Compile Include="Factory\ItemFactory.cs" />
