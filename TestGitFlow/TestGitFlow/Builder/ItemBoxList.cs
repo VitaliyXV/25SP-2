@@ -7,14 +7,12 @@ using TestGitFlow.Model;
 
 namespace TestGitFlow.Builder
 {
-    public class ItemBox
+    class ItemBoxList : IItemBox
     {
         public List<Item> Items { get; set; }
-
-        public ItemBox()
+        public ItemBoxList()
         {
             Items = new List<Item>();
         }
-
     }
 }
