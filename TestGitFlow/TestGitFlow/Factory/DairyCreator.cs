@@ -7,24 +7,23 @@ using TestGitFlow.Model;
 
 namespace TestGitFlow.Factory
 {
-    public class GameCreator:IItemCreator    
+    class DairyCreator: IItemCreator
     {
-        private Game newgame;
+        private Dairy _baseDairy;
 
-        public GameCreator()
+        public DairyCreator(Dairy newDairy)
         {
-            newgame = new Game();
+            _baseDairy = newDairy;
         }
 
         public Item CreateItem()
-        {            
-            return newgame.Clone();
+        {
+            return _baseDairy.Clone();
         }
-
 
         public Type GetItemType()
         {
-            return newgame.GetType();
+            return _baseDairy.GetType();
         }
     }
 }
