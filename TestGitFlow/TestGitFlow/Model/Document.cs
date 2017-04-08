@@ -50,10 +50,10 @@ namespace TestGitFlow.Model
         public override string ToString()
         {
             //// c# old ver.
-            // return String.Format("Name: {0} Author: {1} Price: {2}$\nPages: {3}p. Create: {4} Summary: {5}", Name, Author, Price, Pages, CreationDate?.ToShortDateString(), Summary);
+            return String.Format("Name: {0} Author: {1} Price: {2}$\nPages: {3}p. Create: {4} Summary: {5}", Name, Author, Price, Pages, CreationDate.HasValue ? CreationDate.Value.ToShortDateString() : "null", Summary);
            
             // c# ver 6 
-            return $"Name: {Name} Author: {Author} Price: {Price}$\nPages: {Pages}p. Create: {CreationDate?.ToShortDateString()} Summary: {Summary}";
+            //return $"Name: {Name} Author: {Author} Price: {Price}$\nPages: {Pages}p. Create: {CreationDate?.ToShortDateString()} Summary: {Summary}";
         }
     }
 }

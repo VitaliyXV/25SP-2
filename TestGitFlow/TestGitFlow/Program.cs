@@ -115,6 +115,11 @@ namespace TestGitFlow
             log.Warning("Is origin dairy and clone dairy is equel ?? " + object.Equals(cloneDairy, originDairy));
 
             #endregion
+
+
+            Document doc = new Document(10.10f, "Book", "Andrey", "about pattern", 10, DateTime.Now, null, "");
+            Console.WriteLine(doc);
+
         }
 
         private string GetLogFile()

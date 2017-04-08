@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Model\Communication.cs" />
     <Compile Include="Model\Dairy.cs" />
+    <Compile Include="Model\Document.cs" />
     <Compile Include="Model\Enumerators.cs" />
     <Compile Include="Model\Game.cs" />
     <Compile Include="Model\IItemClonable.cs" />
