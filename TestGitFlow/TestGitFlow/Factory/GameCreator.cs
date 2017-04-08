@@ -11,7 +11,7 @@ namespace TestGitFlow.Factory
     {
         private Game newgame;
 
-        public void GameCreator()
+        public GameCreator()
         {
             newgame = new Game();
         }

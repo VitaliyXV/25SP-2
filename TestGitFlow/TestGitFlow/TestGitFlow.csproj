@@ -46,11 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Include="Factory\DocumentCreator.cs" />
-=======
-    <Compile Include="Factory\GameCreator.cs" />
->>>>>>> 2ef5db83fb989f5961de401b74003b70aae76ccf
+  <Compile Include="Factory\DocumentCreator.cs" />
+  <Compile Include="Factory\GameCreator.cs" />
     <Compile Include="Factory\IItemCreator.cs" />
     <Compile Include="Factory\PhoneCreator.cs" />
     <Compile Include="Factory\ToyCreator.cs" />
