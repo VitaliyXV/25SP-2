@@ -26,5 +26,10 @@ namespace TestGitFlow.Factory
         {
             return newgame.GetType();
         }
+
+        public Item CreateItem(IItemSettings settings = null)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

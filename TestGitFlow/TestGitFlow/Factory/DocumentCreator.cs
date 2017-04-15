@@ -18,5 +18,15 @@ namespace TestGitFlow.Factory
         {
             return defaultDoc.Clone();
         }
+
+        public Item CreateItem(IItemSettings settings = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Type GetItemType()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

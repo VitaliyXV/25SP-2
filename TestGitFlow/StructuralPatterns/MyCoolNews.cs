@@ -42,7 +42,22 @@ namespace StructuralPatterns
         }
 
         private List<News> listNews = new List<News>();
+        public MyCoolNews()
+        {
+            News news1 = new News();
+            news1.Id = 1;
+            news1.Title = "НЛО прилетело и обубликовало эту новость";
+            news1.Text = "Yjjknkljrnvs srgn ng slrgnrlgr";
+            news1.Author = "НЛО";
+            News news2 = new News();
+            news1.Id = 2;
+            news1.Title = "НЛО прилетело и обубликовало и эту новость тоже";
+            news1.Text = "!!!!!Yjjknkljrnvs srgn ng slrgnrlgr";
+            news1.Author = "НЛО";
+            listNews.Add(news1);
 
+            listNews.Add(news2);
+        }
         public List<News> getListNews()
         {
             return listNews;
