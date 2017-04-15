@@ -1,9 +1,10 @@
 ﻿using System;
 using Library;
-using CreationalPattern;
+//using CreationalPattern;
 using System.Configuration;
 using TestGitFlow.Model;
 using TestGitFlow.Adapter;
+using StructuralPatterns;
 
 namespace TestGitFlow
 {
@@ -39,6 +40,16 @@ namespace TestGitFlow
                 ShowNews(n);
             }
 
+
+            #region CNNNewsAdaper
+            NewsService news2 = new CNNNewsAdapter();
+            var ns2 = news2.GetNews();
+            news2.AddComment(ns2[0], "TOJE Жду не дождусь");
+            foreach (var n in news2.GetNews())
+            {
+                ShowNews(n);
+            }
+            #endregion
 
             //#region SERVICE LOCATOR SINGLETONE
 

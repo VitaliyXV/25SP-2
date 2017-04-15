@@ -9,18 +9,18 @@ namespace StructuralPatterns
     public class CNNNews
     {
         //public int id { get; set; }
-        //public DateTime date { get; set; }
+        public DateTime Date { get; set; }
         public string Header { get; set; }
         public string Body { get; set; }
 
         public List<string> Comments;
 
 
-        public CNNNews(string header, string body)
-        {            
-            Header = header;
-            Body = body;
-        }
+        //public CNNNews(string header, string body)
+        //{            
+        //    Header = header;
+        //    Body = body;
+        //}
         
         public void AddComment(string newone)
         {
