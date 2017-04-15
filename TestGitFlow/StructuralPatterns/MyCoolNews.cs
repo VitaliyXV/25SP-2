@@ -11,12 +11,12 @@ namespace StructuralPatterns
         public class Comment
         {
             public string Author { get; set; }
-            public string Comment { get; set; }
+            public string comment { get; set; }
             public DateTime Date { get; set; }
             public Comment()
             {
                 Author = "";
-                Comment = "";
+                comment = "";
                 Date = DateTime.Now;
             }
 
@@ -50,10 +50,10 @@ namespace StructuralPatterns
             news1.Text = "Yjjknkljrnvs srgn ng slrgnrlgr";
             news1.Author = "НЛО";
             News news2 = new News();
-            news1.Id = 2;
-            news1.Title = "НЛО прилетело и обубликовало и эту новость тоже";
-            news1.Text = "!!!!!Yjjknkljrnvs srgn ng slrgnrlgr";
-            news1.Author = "НЛО";
+            news2.Id = 2;
+            news2.Title = "НЛО прилетело и обубликовало и эту новость тоже";
+            news2.Text = "!!!!!Yjjknkljrnvs srgn ng slrgnrlgr";
+            news2.Author = "НЛО";
             listNews.Add(news1);
 
             listNews.Add(news2);
@@ -62,14 +62,35 @@ namespace StructuralPatterns
         {
             return listNews;
         }
+        public void addNews(DateTime date, string theme, string text)
+        {
+
+            var news = new News();
+            news.Id = 1;
+            news.Text = text;
+            news.Title = theme;
+            news.Date = date;
+            listNews.Add(news);
+
+        }
 
         public News getNews(int id)
         {
             return listNews.First(n => n.Id == id);
         }
+        public News getNews(string title, DateTime date)
+        {
+            return listNews.First(n => n.Date == date && n.Title==title);
+        }
         public List<Comment> getCommentbyNews(int id)
         {
             return getNews(id).ListComment;
+        }
+        public void addCommentbyNews(int idnews,string text, DateTime date, string author = "")
+        {
+            Comment c = new Comment();
+            c.comment = text;
+            getNews(idnews).ListComment.Add(c);
         }
     }
 }
