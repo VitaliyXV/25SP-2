@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter\MyNewsClass.cs" />
+    <Compile Include="Adapter\MyServyseOfNews.cs" />
     <Compile Include="Adapter\News.cs" />
     <Compile Include="Adapter\NewsService.cs" />
     <Compile Include="Builder\BuiderItemList.cs" />

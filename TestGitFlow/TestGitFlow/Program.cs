@@ -27,16 +27,27 @@ namespace TestGitFlow
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("=========================");
         }
+        private static void ShowMyNews(MyNewsClass news)
+        {
+            Console.WriteLine("id = " + news.id+ "  Type=" + news.name + " Text:" + news.text);
+            int n = 1;
+            foreach (var c in news.comments)
+            {                
+                Console.WriteLine("comments number" + n + " :" + c);
+                n++;
+            }
+        }
 
         static void Main(string[] args)
         {
-            NewsService news = new NewsService();
-            var ns = news.GetNews();
+            MyServyseOfNews news = new MyServyseOfNews();
+            var ns = news.GetNewses();
             news.AddComment(ns[0], "Жду не дождусь");
+            news.AddComment(ns[0], "My news comments");
 
-            foreach (var n in news.GetNews())
+            foreach (var n in news.GetNewses())
             {
-                ShowNews(n);
+                ShowMyNews(n);
             }
 
 
