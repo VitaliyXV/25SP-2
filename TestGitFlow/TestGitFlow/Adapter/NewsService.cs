@@ -6,7 +6,7 @@ namespace TestGitFlow.Adapter
 {
     public class NewsService
     {
-        private List<News> _news = new List<News>();
+        protected List<News> _news = new List<News>();
 
         public NewsService()
         {
@@ -19,18 +19,18 @@ namespace TestGitFlow.Adapter
             };
         }
 
-        public List<News> GetNews()
+        public virtual List<News> GetNews()
         {
             return _news;
         }
 
-        public List<News> AddNews(DateTime date, string theme, string text)
+        public virtual List<News> AddNews(DateTime date, string theme, string text)
         {
             _news.Add(new News { Date = date, Theme = theme, Text = text });
             return _news;
         }
 
-        public News AddComment(News news, string comment)
+        public virtual News AddComment(News news, string comment)
         {
             news.Comments.Add(comment);
             return news;

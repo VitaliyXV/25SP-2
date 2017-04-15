@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TestGitFlow</RootNamespace>
     <AssemblyName>TestGitFlow</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,10 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CreationalPattern, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\CreationalPattern\obj\Debug\CreationalPattern.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,8 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Adapter\MyNewsClass.cs" />
     <Compile Include="Adapter\MyServyseOfNews.cs" />
+=======
+    <Compile Include="Adapter\CNNNewsAdapter.cs" />
+    <Compile Include="Adapter\MyCoolNewsAdapter.cs" />
+ 
+>>>>>>> c2b19336b6793058cecb3a35ba06f9d18a08a7e6
     <Compile Include="Adapter\News.cs" />
     <Compile Include="Adapter\NewsService.cs" />
     <Compile Include="Builder\BuiderItemList.cs" />
