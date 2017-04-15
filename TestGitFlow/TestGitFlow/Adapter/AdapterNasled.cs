@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TestGitFlow.Adapter
 {
-    class AdapterNasled
+    class AdapterNasled : NewsService
     {
+        
     }
 }
