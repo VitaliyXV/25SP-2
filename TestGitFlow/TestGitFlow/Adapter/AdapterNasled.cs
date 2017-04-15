@@ -8,6 +8,9 @@ namespace TestGitFlow.Adapter
 {
     class AdapterNasled : NewsService
     {
-        
+        public override News AddComment(News news, string comment)
+        {
+            return base.AddComment(news, comment);
+        }
     }
 }
