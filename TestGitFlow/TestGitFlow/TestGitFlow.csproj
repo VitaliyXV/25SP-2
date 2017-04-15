@@ -48,7 +48,11 @@
   </ItemGroup>
   <ItemGroup>
 
+
     <Compile Include="Adapter\CNNNewsAdapter.cs" />
+
+    <Compile Include="Adapter\MyCoolNewsAdapter.cs" />
+
 
     <Compile Include="Adapter\MyCoolNewsAdapter.cs" />
 
