@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter\News.cs" />
+    <Compile Include="Adapter\NewsService.cs" />
     <Compile Include="Builder\BuiderItemList.cs" />
     <Compile Include="Builder\Director.cs" />
     <Compile Include="Builder\IBuilder.cs" />
@@ -93,6 +95,10 @@
     <ProjectReference Include="..\MyClass\MyClass.csproj">
       <Project>{87b2ddb6-49b3-422b-996b-62ab325b492e}</Project>
       <Name>MyClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StructuralPatterns\StructuralPatterns.csproj">
+      <Project>{22edd3f0-1290-44ce-aad2-40529cdd7b3b}</Project>
+      <Name>StructuralPatterns</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
