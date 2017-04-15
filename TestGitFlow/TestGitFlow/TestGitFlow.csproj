@@ -33,10 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CreationalPattern, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\CreationalPattern\obj\Debug\CreationalPattern.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,15 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-
-
     <Compile Include="Adapter\CNNNewsAdapter.cs" />
-
     <Compile Include="Adapter\MyCoolNewsAdapter.cs" />
-
-
-    <Compile Include="Adapter\MyCoolNewsAdapter.cs" />
-
+ 
     <Compile Include="Adapter\News.cs" />
     <Compile Include="Adapter\NewsService.cs" />
     <Compile Include="Builder\BuiderItemList.cs" />
