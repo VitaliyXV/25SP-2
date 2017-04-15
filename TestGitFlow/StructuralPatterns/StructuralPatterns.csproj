@@ -40,8 +40,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+<<<<<<< HEAD
     <Compile Include="CNNNews.cs" />
     <Compile Include="CNNNewsService.cs" />
+=======
+    <Compile Include="MyCoolNews.cs" />
+>>>>>>> develop
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

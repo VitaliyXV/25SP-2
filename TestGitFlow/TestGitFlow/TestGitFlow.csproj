@@ -47,7 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Adapter\CNNNewsAdapter.cs" />
+=======
+    <Compile Include="Adapter\MyCoolNewsAdapter.cs" />
+>>>>>>> develop
     <Compile Include="Adapter\News.cs" />
     <Compile Include="Adapter\NewsService.cs" />
     <Compile Include="Builder\BuiderItemList.cs" />
