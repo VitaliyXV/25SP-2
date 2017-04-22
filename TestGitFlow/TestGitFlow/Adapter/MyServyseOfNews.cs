@@ -22,7 +22,7 @@ namespace TestGitFlow.Adapter
         {
             return lists;
         }
-        public int addNews(string name,string text)
+        public int addNews(string name,string text,string date)
         {            
             lists.Add(new MyNewsClass(lists.Count, name, text, date="uncnow"));
             return 0;
